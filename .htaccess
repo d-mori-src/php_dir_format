@@ -1,0 +1,11 @@
+AddType image/svg+xml .svg .svgz
+
+# AuthType Basic
+# AuthUserFile /your_dir/.htpasswd
+# AuthName "Access Security Page"
+# require valid-user
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

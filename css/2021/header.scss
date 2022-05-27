@@ -1,0 +1,113 @@
+.header {
+    padding: 12px 20px 10px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    .logo {
+        width: 142px;
+    }
+    .navi {
+        display: none;
+    }
+    .contactIconWrap {
+        display: flex;
+        position: absolute;
+        right: 58px;
+        top: 0;
+        .headPhoneIcon, 
+        .headDocumentIcon {
+            width: 58px;
+            height: 58px;
+            vertical-align: top;
+            transition: .5s;
+        }
+        .headPhoneIcon:hover, 
+        .headDocumentIcon:hover {
+            opacity: .7;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 2px;
+        .navi {
+            display: flex;
+            .active {
+                padding: 0 0 8px 0;
+                border-bottom: 1.5px solid #FDEC4F;
+            }
+            li { 
+                position: relative;
+                right: 80px;
+                a {
+                    margin: 0 0 0 18px;
+                    font-size: 11px;
+                    color: #333;
+                    position: relative;
+                    top: 10px;
+                }
+                a:hover {
+                    opacity: .7;
+                }
+            }
+        }
+        .contactIconWrap {
+            right: 0;
+            top: 0;
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .header {
+        .logo {
+            width: 200px;
+        }
+        .navi {
+            li { 
+                right: 120px;
+                a {
+                    margin: 0 0 0 50px;
+                    font-size: 13px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+        .contactIconWrap {
+            .headPhoneIcon, 
+            .headDocumentIcon {
+                width: 72px;
+                height: 72px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1366px) {
+    .header {
+        padding: 20px 50px;
+        .navi {
+            li { 
+                top: 12px;
+                right: 160px;
+                a {
+                    margin: 0 0 0 50px;
+                    font-size: 13px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+        .contactIconWrap {
+            .headPhoneIcon, 
+            .headDocumentIcon {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}

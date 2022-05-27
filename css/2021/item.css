@@ -1,0 +1,13 @@
+.itemPage {
+    margin: 60px 0 0 0;
+}
+@media screen and (min-width: 1024px) {
+    .itemPage {
+        margin: 76px 0 0 0;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .itemPage {
+        margin: 92px 0 0 0;
+    }
+}

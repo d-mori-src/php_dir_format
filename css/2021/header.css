@@ -1,0 +1,104 @@
+.header {
+    padding: 12px 20px 10px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .logo {
+    width: 142px;
+}
+.header .navi {
+    display: none;
+}
+.header .contactIconWrap {
+    display: flex;
+    position: absolute;
+    right: 58px;
+    top: 0;
+}
+.header .contactIconWrap .headPhoneIcon,
+.header .contactIconWrap .headDocumentIcon {
+    width: 58px;
+    height: 58px;
+    vertical-align: top;
+    transition: 0.5s;
+}
+.header .contactIconWrap .headPhoneIcon:hover,
+.header .contactIconWrap .headDocumentIcon:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 2px;
+    }
+    .header .navi {
+        display: flex;
+    }
+    .header .navi .active {
+        padding: 0 0 8px 0;
+        border-bottom: 1.5px solid #FDEC4F;
+    }
+    .header .navi li {
+        position: relative;
+        right: 80px;
+    }
+    .header .navi li a {
+        margin: 0 0 0 18px;
+        font-size: 11px;
+        color: #333;
+        position: relative;
+        top: 10px;
+    }
+    .header .navi li a:hover {
+        opacity: 0.7;
+    }
+    .header .contactIconWrap {
+        right: 0;
+        top: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header .logo {
+        width: 200px;
+    }
+    .header .navi li {
+        right: 120px;
+    }
+    .header .navi li a {
+        margin: 0 0 0 50px;
+        font-size: 13px;
+        position: relative;
+        top: 10px;
+    }
+    .header .contactIconWrap .headPhoneIcon,
+.header .contactIconWrap .headDocumentIcon {
+        width: 72px;
+        height: 72px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .header {
+        padding: 20px 50px;
+    }
+    .header .navi li {
+        top: 12px;
+        right: 160px;
+    }
+    .header .navi li a {
+        margin: 0 0 0 50px;
+        font-size: 13px;
+        position: relative;
+        top: 10px;
+    }
+    .header .contactIconWrap .headPhoneIcon,
+.header .contactIconWrap .headDocumentIcon {
+        width: 90px;
+        height: 90px;
+    }
+}

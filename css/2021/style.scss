@@ -1,0 +1,60 @@
+// font-family: 'Noto Sans JP', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 改行用
+.sp { display: block; }
+.pc { display: none; }
+
+@media screen and (min-width:768px) {
+    .sp { display: none; }
+    .pc { display: block; }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    background: #fff;
+    overflow-x: hidden;
+    .container {
+        min-height: 100vh;
+        padding: 0 0 46px 0;
+        position: relative;
+        @media screen and (min-width:768px) {
+            padding: 0 0 62px 0;
+        }
+    }
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+a.anchor {
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+img {
+    vertical-align: top;
+}
+
+// ガイド
+.guide {
+    width: 1000px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    border-left: 1px dotted #222;
+    border-right: 1px dotted #222;
+    z-index: 2000;
+}
